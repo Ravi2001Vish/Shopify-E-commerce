@@ -1,4 +1,19 @@
-<div class="worker">
-{% assign ravi = "hydra" %}
-{{ ravi }}
-</div>
+
+<header class="site-header" role="banner">
+  <div class="header-wrapper">
+    <h1>{{ 'Welcome to My Shopify Store' | escape }}</h1>
+  </div>
+</header>
+
+{% style %}
+.header-wrapper {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+.header-wrapper h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+{% endstyle %}
